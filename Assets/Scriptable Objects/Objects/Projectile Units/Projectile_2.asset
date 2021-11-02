@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 613f0da9e311cab4895c238e8abfa7f6, type: 3}
+  m_Name: Projectile_2
+  m_EditorClassIdentifier: 
+  bulletsAmount: 4
+  spreadDistance: 63
+  shotsPerSecond: 3
+  shotSpeedOffset: 0
+  rotateSpeed: 3.7
+  projectileObject: {fileID: 11400000, guid: dcfc7250373947c40bf34d81e666288a, type: 2}
+  offset: 0
+  mouseTarget: 0
+  directionSwitch: 0
+  directionSwitchPoint: 180
+  projectileSpeed: 5
+  rotate: 1
+  switchSpeedsContinue: 1
+  switchSpeedSpeed: 1
+  switchSpeedDistance: 4
+  switchSpeedDistanceSecond: 1
+  speedUpper: 0
+  speedLower: 0
+  acceleration: 1
+  followMouse: 0
+  MouseAsLastDirection: 0
+  followAfterDistance: 5
+  followFromDistance: 2
+  wallBounce: 0
+  ProjectileOrbits: 1
+  orbitRoationSpeed: 4
+  orbitRadius: 1
+  orbitCircle: 2
+  numberOfOrbits: 6
+  hideOriginalProjectile: 1
+  weaponRange: 50
+  hitForce: 100

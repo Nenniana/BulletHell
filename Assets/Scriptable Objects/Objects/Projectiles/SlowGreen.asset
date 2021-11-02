@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8566784ad45f0b4b87bd492ca146247, type: 3}
+  m_Name: SlowGreen
+  m_EditorClassIdentifier: 
+  projectileSprite: {fileID: -2869579315123420744, guid: 2d264552e1a4e6547903dd3b24a42418,
+    type: 3}
+  explosionPrefab: {fileID: 7632463683080042332, guid: fbdc9432e22c3c640bfac35a7c30f089,
+    type: 3}
