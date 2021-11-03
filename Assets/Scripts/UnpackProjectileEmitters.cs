@@ -133,9 +133,12 @@ public class UnpackProjectileEmitters : MonoBehaviour
         {
             //Debug.Log("Current Emitter: " + currentEmitter.projectileUnit.name);
 
+            //Event to fire currently loaded projectile.
             OnEmitterTurn?.Invoke(this, new OnFireEventArgs { currentEmitter = currentEmitter });
-            currentEmitter.timesRun++;
+            
+            //Wait based on shotspeed
             yield return new WaitForSeconds((1.0f / currentEmitter.projectileUnit.shotsPerSecond) + currentEmitter.projectileUnit.shotSpeedOffset);
+            currentEmitter.timesRun++;
             StartCoroutine(runProjectileGroup(currentEmitter, currentHolder, continueToNextWhenDone));
         }
         else
