@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: One Shot
   m_EditorClassIdentifier: 
   ProjectileUnits:
-  - {fileID: 11400000, guid: 752ef4600e1e7bf4c826c2b8a3123769, type: 2}
+  - {fileID: 11400000, guid: dedfc80843e015143a545475f9da1cc0, type: 2}
   timesToRun: 1

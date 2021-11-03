@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Standard
   m_EditorClassIdentifier: 
   projectileGroups:
-  - {fileID: 11400000, guid: b360c3efc7296ec469e5e1a15f7140a0, type: 2}
+  - {fileID: 11400000, guid: c20563d86470f4e4785e63c1de102b9d, type: 2}

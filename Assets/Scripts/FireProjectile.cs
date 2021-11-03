@@ -21,8 +21,12 @@ public class FireProjectile : MonoBehaviour
 
     private void Update()
     {
-        InvertRotation();
-        emitter.rotation += rotationSpeed * Time.deltaTime;
+        if (emitter != null)
+        {
+            InvertRotation();
+            emitter.rotation += rotationSpeed * Time.deltaTime;
+        }
+
     }
 
     public void Fire(object sender, UnpackProjectileEmitters.OnFireEventArgs currentEmitter)
@@ -51,7 +55,7 @@ public class FireProjectile : MonoBehaviour
         }
     }
 
-   private void DetermineAngle ()
+    private void DetermineAngle()
     {
         if (emitter.projectileUnit.mouseTarget)
         {
@@ -112,7 +116,7 @@ public class FireProjectile : MonoBehaviour
                         orbitLocation = new Vector3(0, x, -z);
                     else
                         orbitLocation = new Vector3(0, -x, z);
-                  
+
 
                     orbitLocation = centerDirection * orbitLocation;
 
@@ -138,7 +142,7 @@ public class FireProjectile : MonoBehaviour
 
     private void InvertRotation()
     {
-        if (emitter.projectileUnit.directionSwitch && emitter.projectileUnit.directionSwitchPoint != 0)
+        if (emitter != null && emitter.projectileUnit.directionSwitch && emitter.projectileUnit.directionSwitchPoint != 0)
         {
 
             float currentAngle = (emitter.projectileUnit.spreadDistance * emitter.projectileUnit.bulletsAmount) + emitter.projectileUnit.offset;
@@ -162,14 +166,9 @@ public class FireProjectile : MonoBehaviour
             degrees -= 360;
         degrees = degrees * -1;
 
-        if (IsOdd(emitter.projectileUnit.bulletsAmount))
+        if (emitter.projectileUnit.bulletsAmount % 2 != 0)
             angle = (degrees + 90) - (emitter.projectileUnit.spreadDistance * (emitter.projectileUnit.bulletsAmount / 2));
         else
             angle = (degrees + 90) - (emitter.projectileUnit.spreadDistance * (emitter.projectileUnit.bulletsAmount / 2)) + emitter.projectileUnit.spreadDistance / 2;
-    }
-
-    private static bool IsOdd(int value)
-    {
-        return value % 2 != 0;
     }
 }

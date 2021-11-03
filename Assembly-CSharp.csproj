@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0FD7C7E9-9A40-2349-DD3D-79DB5D31EE91}</ProjectGuid>
+    <ProjectGuid>{DA838FCE-D381-60BD-E816-B528AD8D731B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\States\FallState.cs" />
     <Compile Include="Assets\Scripts\States\MoveToMouseState.cs" />
     <Compile Include="Assets\Scriptable Objects\Scripts\ProjectileHolder.cs" />
+    <Compile Include="Assets\DestroyProjectilesInRange.cs" />
     <Compile Include="Assets\Scripts\ProjectileEmitter.cs" />
     <Compile Include="Assets\Scripts\States\AnimationState.cs" />
     <Compile Include="Assets\Scripts\States\MoveOffsetState.cs" />
@@ -92,7 +93,6 @@
     <Compile Include="Assets\Scripts\ObjectPooler2.cs" />
     <Compile Include="Assets\Scripts\Utilities\CountMono.cs" />
     <Compile Include="Assets\Scriptable Objects\Scripts\ProjectileUnit.cs" />
-    <Compile Include="Assets\DestroyProjectilesInRange.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

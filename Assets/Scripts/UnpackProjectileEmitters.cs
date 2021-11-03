@@ -26,7 +26,7 @@ public class UnpackProjectileEmitters : MonoBehaviour
     void Start()
     {
         ReloadAllEmitters();
-        SelectProjectileGroup();
+        //SelectProjectileGroup();
     }
 
     private void Awake()
@@ -129,10 +129,10 @@ public class UnpackProjectileEmitters : MonoBehaviour
         ProgressBar.maximum = currentHolder.timesToRun;
         ProgressBar.current = currentEmitter.timesRun;*/
 
-        if (currentEmitter.timesRun < currentHolder.timesToRun || currentHolder.timesToRun == 0 || projectileHolder.projectileGroups.Count == 1)
+        if (currentEmitter.timesRun < currentHolder.timesToRun || currentHolder.timesToRun == 0)
         {
             //Debug.Log("Current Emitter: " + currentEmitter.projectileUnit.name);
-            
+
             OnEmitterTurn?.Invoke(this, new OnFireEventArgs { currentEmitter = currentEmitter });
             currentEmitter.timesRun++;
             yield return new WaitForSeconds((1.0f / currentEmitter.projectileUnit.shotsPerSecond) + currentEmitter.projectileUnit.shotSpeedOffset);

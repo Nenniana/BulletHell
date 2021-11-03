@@ -1769,8 +1769,6 @@ MonoBehaviour:
   projectileHolder: {fileID: 11400000, guid: b6501a976e6d61f4ba7e17c674fc95d5, type: 2}
   projectileObjectPrefab: {fileID: 8554659987981083875, guid: 0e05005e5bfd35b499da1a99e1537021,
     type: 3}
-  ProgressBar: {fileID: 37128413}
-  skillText: {fileID: 2082753251}
 --- !u!1 &946742993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2673,7 +2671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1637836262
 SpriteRenderer:
   m_ObjectHideFlags: 0
