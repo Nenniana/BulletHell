@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProjectileUnits:
   - {fileID: 11400000, guid: dedfc80843e015143a545475f9da1cc0, type: 2}
-  - {fileID: 11400000, guid: d600442c705fa82459fed6d4af8d674d, type: 2}
-  timesToRun: 1
+  timesToRun: 3

@@ -57,8 +57,9 @@ public class UnpackProjectileEmitters : MonoBehaviour
             SwitchToNextEmitter();
         }
 
-        if (Input.GetKeyDown(KeyCode.V))
+        if (Input.GetKey(KeyCode.V))
         {
+
             SelectProjectileGroup(GetNextProjectileGroup(), false);
         }
     }

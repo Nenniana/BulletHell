@@ -10,7 +10,6 @@ public class ProjectileControl : MonoBehaviour, Ipool
     internal SpriteRenderer spriteRenderer;
     internal Projectile projectile;
     internal Rigidbody2D rb2D;
-    private GameObject player;
     public bool active { get; set; }
 
     public void Initialize()
@@ -19,7 +18,6 @@ public class ProjectileControl : MonoBehaviour, Ipool
         active = false;
         rb2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        player = GameObject.FindGameObjectWithTag("Player");
         /*DestroyAllProjectiles destroyAll = player.GetComponent<DestroyAllProjectiles>();
         destroyAll.OnDestoyAllProjectiles += DestroySelf;*/
     }
