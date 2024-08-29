@@ -1,12 +1,11 @@
 # BulletHell
 
-![Projectile Emitter Demonstration](READMEAssets/ProjectileEmitterDemonstration.gif)
+![Projectile Emitter Demonstration](READMEAssets\ProjectileEmitterDemostration.gif)
 
 This Unity project was my first foray into game development and C# programming, created back in 2018 as I aspired to join the I.T. University of Copenhagen. 
 
 ## Concept
 The project started as an experiment to build a modular projectile system that could be integrated into various games to create challenging and dynamic projectile-based gameplay. The goal was to design a flexible system that allowed for the customization of bullet trajectories and behaviors, which could handle a high volume of projectiles for an engaging bullet hell experience. A playable test scene was later added to showcase the project at my university.
-
 
 ## Features
 
