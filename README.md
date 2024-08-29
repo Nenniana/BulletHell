@@ -1,5 +1,7 @@
 # BulletHell
 
+![Projectile Emitter Demonstration](READMEAssets/ProjectileEmitterDemonstration.gif)
+
 This Unity project was my first foray into game development and C# programming, created back in 2018 as I aspired to join the I.T. University of Copenhagen. 
 
 ## Concept
