@@ -22,4 +22,6 @@ The project started as an experiment to build a modular projectile system that c
 
 ## Test Scene
 
+![Projectile Emitter Demonstration](https://github.com/Nenniana/BulletHell/blob/main/READMEAssets/ProjectileEmitterDemostration_TestScene.gif)
+
 A simple test scene is included where the player character must navigate past an enemy block to reach the goal. The projectile pattern of the enemy can be modified through the associated ScriptableObjects (`ScriptableObjects` -> `Projectile Units` -> `Projectile_2`), demonstrating the module's flexibility.
